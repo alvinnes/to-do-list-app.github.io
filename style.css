@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #8116fa, #4646ee);
+}
+
+.container {
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1 {
+  margin: 1rem 0;
+}
+.teks {
+  display: flex;
+  width: 90%;
+  margin-top: 2rem;
+  gap: .5rem;
+}
+.teks .btn {
+  background-color: dodgerblue;
+  font-size: 1rem;
+  width: 4rem;
+  color: white;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+.container .teks input {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.list {
+  width: 90%;
+  list-style-type: none;
+}
+
+.list .item {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  font-size: 1rem;
+  background-color: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  cursor: default;
+  transition: 0.5s;
+}
+.list .item.del p {
+  text-decoration: line-through;
+}
+.list .item.border {
+  box-shadow: 0 0 5px blue;
+}
+.list .item button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.4rem;
+  height: 100%;
+  width: 3rem;
+  margin-right: -1rem;
+}
+
+/* .list .item .radio {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid black;
+} */
